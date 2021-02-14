@@ -127,7 +127,7 @@
   background: rgba(255, 255, 255, 0.1);
   z-index: 1;
   right: 0;
-  top: 0;
+  top: 0;	
   margin: -5px 0 0 -5px;
   -webkit-transform-origin: 0 0;
   -webkit-transform: rotate(-20deg);
@@ -141,10 +141,6 @@
 
 .btn-3e:hover:after {
   width: 40%;
-}
-
-.icon-arrow-right:before {
-  content: "";
 }
 
 .fontMe {
@@ -209,5 +205,4 @@
 
   .edit:hover{
 	  color:red;
-	  
   }
