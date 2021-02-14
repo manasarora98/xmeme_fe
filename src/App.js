@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Helmet } from "react-helmet";
+import "./App.css";
+import CardComponent from "./components/CardComponent";
+import FooterComponent from "./components/FooterComponent";
+import FormComponent from "./components/FormComponent";
+import HeaderComponent from "./components/HeaderComponent";
+import xmemes from './assets/xlogo.svg';
+import "./styles.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Helmet>
+        <title>XMemes</title>
+        <link rel="icon" href={xmemes} type="image/icon type"></link>
+      </Helmet>
+      <HeaderComponent />
+      <br />
+      <br />
+      <br />
+      <br />
+      <FormComponent />
+      <br />
+      <CardComponent />
+      <br />
+      <br />
+      <br />
+      <FooterComponent />
     </div>
   );
 }
